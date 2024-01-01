@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=420,user-scalable=no,initial-scale=2.5714285714285716,minimum-scale=2.5714285714285716,maximum-scale=2.5714285714285716">
+    <meta property="og:image" content="/IMAGE/banner.png">
+    <title>SIÊU SALE - ĐỒNG GIÁ</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./IMAGE/logo-huong-phan-white.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type = "text/javascript" > 
+        window.dungnh_viewport = function(i) {
+            var a = document;
+            var b = window.dungnh_screen_width || window.screen.width;
+            i = i ? i : 'innerWidth';
+            var c = window[i] > 0 ? window[i] : b;
+            var d = c;
+            var e = false;
+            var f = "";
+            if (typeof window.dungnh_is_desktop == "undefined" || window.dungnh_is_desktop == undefined) {
+                window.dungnh_is_desktop = e;
+            }
+            if (!e) {
+                d = 420;
+            } else {
+                d = 960;
+            }
+            f = "width=" + d + ",user-scalable=no";
+            var g = 1;
+            if (!e && d != b && b > 0) {
+                g = b / d;
+            }
+            if (g != 1) {
+                f += ",initial-scale=" + g + ",minimum-scale=" + g + ",maximum-scale=" + g;
+            }
+            var h = a.getElementById("viewport");
+            if (!h) {
+                h = a.createElement("meta");
+                h.setAttribute("id", "viewport");
+                h.setAttribute("name", "viewport");
+                a.head.appendChild(h);
+            }
+            h.setAttribute("content", f);
+        };
+            window.dungnh_viewport();
+            window.dungnh_fbq_data = [];
+            window.dungnh_fbq = function() {
+            window.dungnh_fbq_data.push(arguments);
+        };
+        window.dungnh_ttq_data = [];
+        window.dungnh_ttq = function() {
+            window.dungnh_ttq_data.push(arguments);
+        }; 
+    </script>
+</head>
+<body>
+    <div class="spa-wapper">
+        <div class="spa-top">
+            <div class="spa-banner">
+                <a href="https://huongphanacademy.com/">
+                    <img src="IMAGE/title-head-and-logo.png" alt="" width="100%">
+                </a>
+            </div>
+            <div class="spa-title">
+                <img src="IMAGE/slogan.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="spa-form">
+            <form id="myFormUser">
+                <div class="spa-form__input">
+                    <div class="spa-form__input_item">
+                        <input type="text" id="input-name-button" name="name" placeholder="*Họ và tên:">
+                        <label class="d-none" style="color: red;font-size: 11px;">Lỗi</label>
+                    </div>
+                    <div class="spa-form__input_item">
+                        <input type="text" id="input-phone-button" name="phone" placeholder="*Số điện thoại:" autocomplete="off">
+                        <label class="d-none" style="color: red;font-size: 11px;">Lỗi</label>
+                    </div>
+                    <div class="spa-form__select_item">
+                        <select placeholder="Chọn ưu đãi:">
+                            <option value="" disabled selected>Chọn ưu đãi</option>
+                            <option>Ưu đãi 20% tất cả sản phẩm Nano PMU</option>
+                            <option>Ưu đãi 20% tất cả sản phẩm Nano PMU</option>
+                            <option>Ưu đãi đến 49% học phí tại P Academy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="spa-form__button">
+                    <button type="submit" class="animation-zoom">NHẬN ƯU ĐÃI NGAY</button>
+                </div>
+            </form>
+            <div class="spa-service">
+                <div class="spa-service__title">
+                    <img src="./IMAGE/title-top-dich-vu-ua-thich-nhat.png" alt="">
+                </div>
+                <div class="spa-service__group">
+                    <div class="spa-service__group__row">
+                        <div class="spa-service__group__item">
+                            <div class="spa-service__item__img">
+                                <img src="./IMAGE/di-soi-hairstock.png" alt="" style="width: 100%;">
+                            </div>
+                            <div class="spa-service__item__title">
+                                Phun mày haistroke
+                                
+                            </div>
+                            <div class="spa-service__item__button">
+                                <button type="text" onclick="openLinkPage()">
+                                    <i class="fa fa-calendar-days"></i>
+                                    Đặt lịch ngày
+                                </button>
+                            </div>
+                        </div>
+                        <div class="spa-service__group__item">
+                            <div class="spa-service__item__img">
+                                <img src="./IMAGE/phun-moi-nano.png" alt="" style="width: 100%;">
+                            </div>
+                            <div class="spa-service__item__title">
+                                Phun môi nano
+                            </div>
+                            <div class="spa-service__item__button">
+                                <button type="text" onclick="openLinkPage()">                                    
+                                    <i class="fa fa-calendar-days"></i>
+                                    Đặt lịch ngày
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="spa-service__group__row">
+                        <div class="spa-service__group__item">
+                            <div class="spa-service__item__img">
+                                <img src="./IMAGE/phun-may-ombre.png" alt="" style="width: 100%;">
+                            </div>
+                            <div class="spa-service__item__title">
+                                Phun mày ombre
+                            </div>
+                            <div class="spa-service__item__button">
+                                <button type="text" onclick="openLinkPage()">                                    
+                                    <i class="fa fa-calendar-days"></i>
+                                    Đặt lịch ngày
+                                </button>
+                            </div>
+                        </div>
+                        <div class="spa-service__group__item">
+                            <div class="spa-service__item__img">
+                                <img src="./IMAGE/phun-mi.png" alt="" style="width: 100%;">
+                            </div>
+                            <div class="spa-service__item__title">
+                                Phun mí mở tròng
+                            </div>
+                            <div class="spa-service__item__button">
+                                <button type="text" onclick="openLinkPage()">                                    
+                                    <i class="fa fa-calendar-days"></i>
+                                    Đặt lịch ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spa-question">
+            <div class="spa-question__title">
+                <img src="IMAGE/title-vi-sao-chon-huong-phan.png" alt="" style="width: 100%;">
+            </div>
+            <div class="spa-question__carosel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="item-meta">
+                                <img src="/IMAGE/VI_SAO/vi-sao-doi-ngu-huong-phan.png" class="d-block w-100" height="192" alt="...">
+                                <div class="spa-question__carosel_botton_title">
+                                    Các Master tay nghề cao, đây bạn kinh nghiệm chuyên môn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-meta">
+                                <img src="/IMAGE/VI_SAO/thiet-bi-may-moc-tien-tien.png" class="d-block w-100"  height="192" alt="...">
+                                <div class="spa-question__carosel_botton_title">
+                                    Thiết bị máy móc tiên tiến, hiện đại nhất hiện nay
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-meta">
+                                <img src="/IMAGE/VI_SAO/khong-gian-dang-cap-sang-trong.png" class="d-block w-100"  height="192" alt="...">
+                                <div class="spa-question__carosel_botton_title">
+                                    Không gian làm đẹp đẳng cấp, sang trọng.
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-meta">
+                                <img src="/IMAGE/VI_SAO/dia-diem-lam-dep-dang-tin-cay-cua-20000.png" class="d-block w-100"  height="192" alt="...">
+                                <div class="spa-question__carosel_botton_title">
+                                    Địa điểm làm đẹp đáng tin cậy của hơn 20.000 khách hàng.
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev pointer" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="carousel-control-next pointer" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            
+            </div>
+            <div class="spa-question__button">
+                <button type="text" class="animation" onclick="openLinkPage()">Đăng ký ngay</button>
+            </div>
+        </div>
+        <div class="spa-beautiful">
+            <div class="spa-beautiful_title">
+                <img src="IMAGE/title-loi-ich-cam-ket.png" alt="" style="width: 100%;">
+            </div>
+            <div class="spa-beautiful_group">
+                <div class="spa-beautiful_group__row">
+                    <div class="spa-beautiful_group__item">
+                        <div class="spa-beautiful_group__icon">
+                            <img src="IMAGE/ICON/icon-1.png" alt="" width="100%">
+                        </div>
+                        <div class="text-center">
+                            Uy tính <br> chất lượng bền vững tính  thẩm cao
+                        </div>
+                    </div>
+                    <div class="spa-beautiful_group__item">
+                        <div class="spa-beautiful_group__icon">
+                            <img src="IMAGE/ICON/icon-2.png" alt="" width="100%">
+                        </div>
+                        <div class="text-center">
+                            Luôn lắng nghe và thực hiện dựa trên mong muốn khách hàng
+                        </div>
+                    </div>
+                </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                <div class="spa-beautiful_group__row">
+                    <div class="spa-beautiful_group__item">
+                        <div class="spa-beautiful_group__icon">
+                            <img src="IMAGE/ICON/icon-3.png" alt="" width="100%">
+                        </div>
+                        <div class="text-center">
+                            Hiệu quả rõ rệt chỉ sau một lần sử dụng dịch vụ
+                        </div>
+                    </div>
+                    <div class="spa-beautiful_group__item">
+                        <div class="spa-beautiful_group__icon" style="padding-bottom: 0;">
+                            <img src="IMAGE/ICON/icon-4.png" alt="" width="100%">
+                        </div>
+                        <div class="text-center">
+                            An toàn - không đau - không sưng - không nghĩ dưỡng             
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <div class="spa-beautiful_button">
+                <button type="text" class="animation-white" onclick="openLinkPage()">Liên Hệ Tư Vấn</button>
+            </div>
+        </div>
+        <div class="spa-review">
+            <div class="spa-review__title">
+                Cảm nhận của khách hàng
+            </div>
+            <div id="carouselReview" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="spa-review__item">
+                        <div>
+                            <span class="spa-review__point">"</span>
+                            <div class="spa-review__meta">
+                                <div class="spa-review__avatar">
+                                    <img src="IMAGE/REVIEW/review_user_1.png" alt="" height="50" width="50" >
+                                </div>
+                                <div class="spa-review__info">
+                                    <div class="spa-review__info__name">Yến Nhy</div>
+                                    <div class="spa-review__info__age">(27t - Vũng Tàu)</div>
+                                </div>
+                            </div>
+                            <div class="spa-review__rate">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="spa-review__content">
+                                <p>
+                                    Không gian làm đẹp sạch sẽ, thoáng mát, máy móc trông cũng hiện đại. Nhân viên thì thân thiện nhiệt tình nói chung là ưng lắm nha.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="spa-review__item">
+                        <div>
+                            <span class="spa-review__point">"</span>
+                            <div class="spa-review__meta">
+                                <div class="spa-review__avatar">
+                                    <img src="IMAGE/REVIEW/review_user_2.png" alt="" height="50" width="50" >
+                                </div>
+                                <div class="spa-review__info">
+                                    <div class="spa-review__info__name">Ngọc Vân</div>
+                                    <div class="spa-review__info__age">(30t - Nha Trang)</div>
+                                </div>
+                            </div>
+                            <div class="spa-review__rate">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="spa-review__content">
+                                <p>
+                                    Thấy nhiều người giới thiệu định trải nghiệm thử cho biết, ai dè về được khen quá chừng vì chân mày quá đẹp và tự nhiên.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="spa-review__item">
+                        <div>
+                            <span class="spa-review__point">"</span>
+                            <div class="spa-review__meta">
+                                <div class="spa-review__avatar">
+                                    <img src="IMAGE/REVIEW/review_user_3.png" alt="" height="50" width="50" >
+                                </div>
+                                <div class="spa-review__info">
+                                    <div class="spa-review__info__name">Minh Trang</div>
+                                    <div class="spa-review__info__age">(25t - Thủ Đức)</div>
+                                </div>
+                            </div>
+                            <div class="spa-review__rate">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="spa-review__content">
+                                <p>
+                                    Trước môi mình bị thâm viền khá nặng nên tự ti lắm luôn, ra ngoài lúc nào cũng mang khẩu trang. Sau khi làm combo khử thâm + phun môi ở đây vừa tự tin vừa đỡ tốn tiền mua son, cảm ơn Hương Phan Beauty nhiều nhé!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="spa-review__item">
+                        <div>
+                            <span class="spa-review__point">"</span>
+                            <div class="spa-review__meta">
+                                <div class="spa-review__avatar">
+                                    <img src="IMAGE/REVIEW/review_user_4.png" alt="" height="50" width="50" >
+                                </div>
+                                <div class="spa-review__info">
+                                    <div class="spa-review__info__name">Thúy Hằng</div>
+                                    <div class="spa-review__info__age">(45t - Quận 1)</div>
+                                </div>
+                            </div>
+                            <div class="spa-review__rate">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="spa-review__content">
+                                <p>
+                                    Làm dịch vụ ở đây nhẹ nhàng lắm nha mng, mình làm môi với làm mày mà lần nào cũng ngủ ngon hết không hề có cảm giác gì luôn nên mấy chị em sợ đau cứ yên tâm nha.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="spa-review__button">
+                <button type="text" class="animation" onclick="openLinkPage()">Đăng ký ngay</button>
+            </div>
+        </div>
+        <div class="spa-news">
+            <div class="spa-news__title">
+                <div class="spa-news__title__heading">TRuyền thống nói gì về</div>
+                <div class="spa-news__title__sub">Huong Phan Beauty</div>
+            </div>
+            <div class="spa-news__group">
+                <div class="spa-news__row">
+                    <div class="spa-news__item">
+                        <a href="https://ngoisao.vnexpress.net/huong-phan-co-gai-khoi-nghiep-tu-phun-xam-tham-my-4275790.html " target="_blank">
+                            <img src="/IMAGE/bao-chi-vn-express.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="spa-news__item">
+                        <a href="https://vtc.vn/grand-master-huong-phan-thoi-hon-vao-tung-ky-thuat-phun-xam-nano-pmu-ar610854.html" target="_blank">
+                            <img src="IMAGE/bao-chi-vtc-news.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="spa-news__row">
+                    <div class="spa-news__item">
+                        <a href="https://eva.vn/nhan-vat-dep/nghe-nhan-phun-xam-huong-phan-thanh-cong-voi-hoc-vien-huong-phan-beauty-c262a461086.html" target="_blank">
+                            <img src="/IMAGE/bao-chi-eva.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="spa-news__item">
+                        <a href="https://tienphong.vn/grand-master-huong-phan-chia-se-cac-phuong-phap-lam-dep-tai-huong-phan-beauty-post1303828.tpo" target="_blank">
+                            <img src="/IMAGE/bao-chi-tien-phong.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="spa-news__item_video">
+                <video src="https://hls.mediacdn.vn/thanhnien/2018/8/4/hoc-vien-huong-phannn-1533378005954749025558-e7b31.mp4" width="100%" height="100%" autoplay controls></video>
+                <!-- <iframe width="100%" height="200px" src="https://www.youtube.com/embed/xkaC_WRVjKM?si=fqSOStY1ZJDNAUqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+            <div class="spa-news__item_brands">
+                <img src="IMAGE/logo-bao-chi.png" alt="" width="100%">
+            </div>
+            <div class="spa-news__item_button">
+                <Button class="animation" onclick="openLinkPage()">Tìm Hiểu ngày</Button>
+            </div>
+        </div>
+        <div class="spa-footer">
+            <div class="spa-footer__logo">
+                <a href="https://huongphanacademy.com/" target="_blank">
+                    <img src="IMAGE/logo-huong-phan-gold.jpg" alt="" width="100%">
+                </a>
+            </div>
+            <div class="spa-footer__address">
+                <span class="title">Địa chỉ : </span> 107 Dương Văn An, Phường An Phú, Bình An, Quận 2,TP. Hồ Chí Minh 
+            </div>
+            <div class="spa-footer__phone">
+                <span>HOTLINE</span>
+                <p>0936.389.399</p>
+            </div>
+            <div class="spa-footer__social">
+                <div class="spa-footer__social__item">
+                    <a href="https://www.facebook.com/huongphanpmubeauty" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="spa-footer__social__item">
+                    <a href="https://www.youtube.com/channel/UCOZpizT2eSz0MNnlI-uleqQ" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="spa-footer__social__item">
+                    <a href="https://huongphanacademy.com/" target="_blank">
+                        <i class="fa fa-globe"></i>
+                    </a>
+                </div>
+                <div class="spa-footer__social__item">
+                    <a href="https://www.tiktok.com/@huongphanbeauty" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- POPUP -->
+        <div class="modal fade" id="main-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 399px;" role="document">
+              <div class="modal-content">
+                <button type="button" onclick="closeModalForm()" class="close" >×</button>
+                <div class="modal-body">
+                    <form id="myFormUserModal">
+                        <div class="spa-form__input">
+                            <div class="spa-form__input_item">
+                                <input type="text" id="input-name-modal" name="name" placeholder="*Họ và tên:">
+                                <label class="d-none" style="color: red;font-size: 11px;">Lỗi</label>
+                            </div>
+                            <div class="spa-form__input_item">
+                                <input type="text" id="input-phone-modal" name="phone" placeholder="*Số điện thoại:">
+                                <label class="d-none" style="color: red;font-size: 11px;">Lỗi</label>
+                            </div>
+                            <div class="spa-form__select_item">
+                                <select id="myFormUserModal" placeholder="Chọn ưu đãi:">
+                                    <option value="" disabled selected>Chọn ưu đãi</option>
+                                    <option>Ưu đãi 20% tất cả sản phẩm Nano PMU</option>
+                                    <option>Ưu đãi 20% tất cả sản phẩm Nano PMU</option>
+                                    <option>Ưu đãi đến 49% học phí tại P Academy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="spa-form__button">
+                            <button type="button" onclick="sendDataModal()">NHẬN ƯU ĐÃI NGAY</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- POPUP SUSSCES-->
+        <div class="modal fade" id="main-sussces-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 399px;" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <h3 style="text-align: center; text-transform: uppercase;">Đăng ký thành công</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js" integrity="sha512-JWQFV6OCC2o2x8x46YrEeFEQtzoNV++r9im8O8stv91YwHNykzIS2TbvAlFdeH0GVlpnyd79W0ZGmffcRi++Bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="./JS/script.js"></script>
+
+     <!-- Messenger Plugin chat Code -->
+     <div id="fb-root"></div>
+
+     <!-- Your Plugin chat code -->
+     <div id="fb-customer-chat" class="fb-customerchat">
+     </div>
+ 
+     <script>
+       var chatbox = document.getElementById('fb-customer-chat');
+       chatbox.setAttribute("page_id", "220053725108649");
+       chatbox.setAttribute("attribution", "biz_inbox");
+     </script>
+ 
+     <!-- Your SDK code -->
+     <script>
+       window.fbAsyncInit = function() {
+         FB.init({
+           xfbml            : true,
+           version          : 'v18.0'
+         });
+       };
+ 
+       (function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+     </script>
+</body>
+</html>
